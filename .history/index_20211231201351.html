@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+<div class="container" id="container">
+  <div class="form-container sign-up-container">
+    <form action="#">
+      <h1>Create Account</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>hoặc đăng nhập bằng <b>Email</b> của bạn</span>
+      <input type="text" id="phone" class="phone-error" placeholder="Số điện thoại" />
+      <input type="email" id="email" class="email-error" placeholder="Email" />
+      <input type="text" id="fullname" class="fullname-error" placeholder="Họ và tên" />
+      <input type="password" id="password" class="password-error" placeholder="Mật khẩu" />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <div class="form-container sign-in-container">
+    <form action="#">
+      <h1>Sign in</h1>
+      <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <span>hoặc sử dụng <b>tài khoản</b> của bạn</span>
+      <input type="email" placeholder="Email" required/>
+      <input type="password" placeholder="Mật khẩu" required/>
+      <a href="#">Quên mật khẩu ?</a>
+      <button class="btnEl">Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-left">
+        <h1>Đăng nhập</h1>
+        <p>Vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+        <button class="ghost" id="signIn">Sign In</button>
+      </div>
+      <div class="overlay-panel overlay-right">
+        <h1>Đăng kí</h1>
+        <p>Vui lòng đăng kí tài khoản của bạn <u>tại đây</u></p>
+        <button class="ghost" id="signUp">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
